@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto - Café Raíz</title>
+        <link rel="stylesheet" href="css/contacto.css"> <!-- Vincula tu archivo de estilos -->
+        <link rel="stylesheet" href="css/global.css">
+    </head>
+    <script src="js/script.js"></script>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Café Raíz Logo">
+            </div>
+            <div class="header-left">
+                <a href="index.html" class="header-link"><h1>Inicio</h1></a>
+                <a href="menu.html" class="header-link"><h1>Menú</h1></a>
+                <a href="accesorios.html" class="header-link"><h1>Accesorios</h1></a>
+            </div>
+            <div class="header-right">
+                <img src="images/icono-buscar.png" alt="Buscar">
+                <img src="images/icono-usuario.png" alt="Usuario">
+                <img src="images/icono-carrito.png" alt="Carrito">
+            </div>
+        </header>
+
+        <main>
+            <!-- Título de la página -->
+            <div class="title-container">
+                <h2>Contacto</h2>
+            </div>
+
+            <!-- Formulario de contacto con el id correcto -->
+            <section id="contacto">
+                <form id="contactForm">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br>
+                
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required><br>
+                
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                
+                    <button type="submit">Enviar</button>
+                </form>
+                
+                <!-- Mensaje de carga que aparece durante el envío -->
+                <div id="loadingMessage" style="display: none;">Enviando...</div>
+                
+            </section>
+        </main>
+
+        <footer id="contacto-footer">
+            <div class="footer-left">
+                <div class="footer-links">
+                    <a href="contacto.html" class="footer-link"><h1>Contacto</h1></a>
+                    <a href="nosotros.html" class="footer-link"><h1>Nosotros</h1></a>
+                </div>
+            </div> 
+            <div class="social-icons">
+                <img src="images/Tiktok-icon.png" alt="Tiktok">
+                <img src="images/Facebook-icon.png" alt="Facebook">
+                <img src="images/Instagram-icon.png" alt="Instagram">
+            </div>
+        </footer>
+    </body>
+</html>
