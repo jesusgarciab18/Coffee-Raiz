@@ -1,0 +1,92 @@
+/* Estilos específicos para la página de accesorios */
+
+/* Título principal de la página de accesorios */
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px; /* Asegura que haya espacio con el header */
+}
+
+/* Contenedor principal de los items de accesorios */
+.menu-category {
+    margin: 20px 0;
+}
+
+/* Ajustes para los elementos dentro de la categoría de accesorios */
+.menu-items {
+    display: flex;
+    justify-content: space-evenly; /* Espacio entre los elementos */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 10px; /* Ajusta el padding */
+}
+
+/* Estilos específicos para cada item (accesorio) */
+.item {
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Títulos de cada accesorio */
+.item h4 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Estilo para el contenedor del título principal */
+.title-container {
+    background-color: #42b983; /* Fondo verde */
+    padding: 5px; /* Espaciado dentro del contenedor */
+    margin-top: 50px; /* Espacio arriba para despegarlo del header */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+/* Título principal de la página (Accesorios) */
+.title-container h2 {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    color: #ffffff; /* Color blanco */
+    margin: 0; /* Elimina el margen por defecto */
+    font-size: 25px; /* Tamaño del título */
+}
+
+/* Establecer el alto mínimo de la página para que el footer quede en la parte inferior */
+body {
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenedor principal de contenido (Main) */
+main {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+}
+
+/* Asegura que el footer quede abajo */
+footer {
+    margin-top: auto; /* Esto empuja el footer hacia abajo */
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: auto;
+        margin-bottom: 30px;
+    }
+}

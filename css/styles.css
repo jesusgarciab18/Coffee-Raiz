@@ -1,0 +1,124 @@
+/* Banner principal de promociones */
+#banner {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 30px;
+}
+
+#banner img {
+    width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-top: 15px;
+}
+
+/* Sección de productos */
+#productos {
+    display: flex;
+    justify-content: space-between; /* Asegura que haya espacio uniforme entre los productos */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px; /* Espacio superior para separar los productos del título */
+    margin-bottom: 40px; /* Espacio entre los productos y el footer */
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+/* Estilos de cada producto */
+#productos .producto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 22%; /* Ajuste de tamaño para los productos */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espacio entre productos */
+    display: flex;
+    flex-direction: column; /* Hace que la imagen y el texto estén alineados verticalmente */
+    align-items: center; /* Centra todo el contenido del producto */
+    justify-content: flex-end; /* Asegura que el texto quede al final */
+}
+
+/* Ajuste de imágenes */
+#productos .producto img {
+    width: 80%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    #productos .producto {
+        width: 45%; /* Ocupa el 45% del ancho para pantallas medianas (tabletas) */
+    }
+}
+
+/* Media Query para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    #productos .producto {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas móviles */
+    }
+
+    #productos .producto img {
+        width: 80%; /* Ajusta el tamaño de la imagen para móviles */
+    }
+
+}
+
+#productos h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 30px;
+    text-align: center; /* Centra el nombre del producto */
+}
+
+/* Estilo para el título "Cursos" */
+h2 {
+    background-color: #42b983; /* Fondo verde */
+    color: white; /* Texto blanco */
+    font-size: 1.5rem; /* Tamaño grande para destacar */
+    font-weight: bold;
+    padding: 5px 300px; /* Espacio dentro del recuadro */
+    margin-bottom: 30px; /* Espacio debajo del título */
+    border-radius: 0px; /* Bordes redondeados */
+    display: block; /* Hace que ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto */
+}
+
+/* Contenedor de los cursos */
+.curso {
+    display: inline-block;
+    width: 45%; /* Ocupa el 45% del ancho de la sección */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 14px;
+    text-align: center;
+    vertical-align: top; /* Asegura que se alineen en la misma línea */
+}
+
+.curso img {
+    width: 100%; /* Ajusta la imagen al contenedor */
+    height: auto;
+    border-radius: 5px;
+}
+
+.curso h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Asegura que los cursos estén alineados correctamente en pantallas más grandes */
+@media (min-width: 768px) {
+    #Cursos-de-Barista {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px; /* Espacio entre los cursos */
+    }
+
+    .curso {
+        width: 48%; /* Asegura que los cursos ocupen un 48% del ancho */
+    }
+}
+
