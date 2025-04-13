@@ -1,0 +1,95 @@
+
+/* Contenedor del título de la página */
+.title-container {
+    background-color: #42b983;
+    padding: 5px;
+    text-align: center;
+    margin-top: 50px; /* Agregar separación del header */
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+}
+
+/* Título de la página (Contacto) */
+.title-container h2 {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+/* Estilos para el formulario de contacto */
+#contacto {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contacto label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contacto button {
+    width: 100%;
+    padding: 12px;
+    background-color: #42b983;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#contacto button:hover {
+    background-color: #38a172;
+}
+
+/* Establecer el alto mínimo de la página para que el footer quede en la parte inferior */
+body {
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenedor principal de contenido (Main) */
+main {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+}
+
+/* Asegura que el footer quede abajo */
+footer {
+    margin-top: auto; /* Esto empuja el footer hacia abajo */
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: auto;
+        margin-bottom: 30px;
+    }
+}
